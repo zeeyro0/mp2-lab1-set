@@ -24,7 +24,7 @@ TBitField::TBitField(int len)
         throw len;
 
     BitLen = len;
-    MemLen = (len + BITS_IN_ELEM - 1) / BITS_IN_ELEM;
+    MemLen = (len + Bits_in_elem - 1) / Bits_in_elem;
     pMem = new TELEM[MemLen > 0 ? MemLen : 1];
 
     for (int i = 0; i < MemLen; i++)
